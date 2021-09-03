@@ -55,7 +55,7 @@ font-weight: 400;
 }
 
 .info a{
-    background-color: tomato;
+    background-color: rgb(255, 135, 36);
     height: 50px;
     width: 150px;
     font-size: 20px;
@@ -65,7 +65,12 @@ font-weight: 400;
     text-decoration: none;
     color: white;
     margin-top: 15px;
+    border-radius: 40px;
     
+}
+
+.info a:hover{
+    background-color: rgb(212, 112, 30);
 }
 
 .social{
@@ -73,6 +78,11 @@ font-weight: 400;
     flex-direction: column;
     height: 80vh;
     justify-content: space-evenly;
+}
+
+.social a{
+    color: white;
+    
 }
 
 .about{
@@ -130,13 +140,48 @@ font-weight: 400;
     background-color: whitesmoke;
     border: 1px solid black;
     border-radius: 15px;
+    box-shadow: rgb(121, 118, 118) 5px 5px 10px;
+    transition: 0.3s ease;
 
+}
+
+.project:hover{
+    transform: scale(120%);
 }
 
 .project img{
     width: 200px;
     border-radius: 50%;
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
+
+
+
+.projects a{
+    text-decoration: none;
+    color: black;
+}
+
+footer{
+    height: 20vh;
+    background-color: #212529;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.contact{
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.email{
+    font-size: 40px;
+}
+
+
 
 @media only screen and (max-width: 1000px) {
 .main{
@@ -176,6 +221,7 @@ font-weight: 400;
 
 .about-info h2{
     font-size: 50px;
+    margin-top: 50px;
     
 }
 
@@ -191,7 +237,7 @@ font-weight: 400;
 
 .portfolio{
     margin-top: 100px;
-    height: 150vh
+    height: 200vh
 }
 
 .projects{
@@ -199,5 +245,13 @@ font-weight: 400;
    transform: translateY(40px);
     
     
+}
+
+footer{
+    margin-top: 100px;
+}
+
+.email{
+    font-size: 150%;
 }
 }
