@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    display: flex;
+    padding: 0 10% 0 10%;
+    height: 10vh;
+    
+    justify-content: space-between;
+    align-items: center;
+    background-color: #212529;
+    color: white;
+}
+
+nav{
+    width: 50%;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+.main{
+    display: flex;
+    background-color: #212529;
+    color: white;
+    height: 90vh;
+    padding: 0 10% 0 10%;
+    justify-content: space-between;
+    align-items: center;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+}
+
+.info h2{
+font-size: 100px;
+font-weight: 400;
+}
+
+.info p{
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.info a{
+    background-color: tomato;
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    margin-top: 15px;
+    
+}
+
+.social{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: space-evenly;
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10% 0 10%;
+    height: 100vh;
+    
+}
+
+.about-info h2{
+    font-size: 70px;
+}
+
+.about-info p{
+    width: 40vw;
+    font-size: 20px;
+}
+
+.about-image img{
+    width: 500px;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 1000px) {
+.main{
+    flex-direction: column;
+}
+
+.info h2{
+    font-size: 80px;
+    margin-top: 30px;
+}
+.info p{
+    margin-top: 30px;
+}
+
+.info a{
+    margin-top: 50px;
+    margin-left: 90px;
+}
+
+.social{
+    flex-direction: row;
+    width: 90vw;
+    margin-top: 50px;
+}
+
+.about{
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-info h2{
+    font-size: 50px;
+    
+}
+
+.about-info p{
+    text-align: center;
+    width: 110%;
+}
+
+.about-image img{
+    width: 300px;
+    margin-top: 30px;
+}
+}
