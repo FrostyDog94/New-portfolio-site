@@ -225,30 +225,36 @@ header{
     display: block;
 }
 .hamburger{
-    display: block;
+   display: block;
     background-color: transparent;
     border: transparent;
     z-index: 3;
-    margin: 20px;
+    padding-top: 1em;
+    padding-right: 1em;
+ 
     
 
     
 }
 nav{
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 100%;
     width: 100vw;
    
     
 }
 
-
-    
 nav ul{
     display: none;
     background-color: #4f5861;
  }
+
+nav ul li{
+    padding-left: 2em;
+}
+
 
 .logo{
     display: none;
