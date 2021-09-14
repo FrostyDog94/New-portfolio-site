@@ -13,7 +13,7 @@
 <body>
     <header>
         <div class="logo"> </div>
-        <nav class="nav">
+        <nav class="nav startReverse">
             <button class="hamburger" id="hamburger">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="40" height="40" viewBox="0 0 24 24">
                     <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" />
@@ -30,17 +30,17 @@
 
     </header>
     <section class="main">
-        <div class="info">
+        <div class="info start">
             <h2>Hi, I'm <span class="highlight">Andrew Soguero</span>
             </h2>
-            <p>I am a Front End Developer</p>
+            <p>I am a front-end web developer</p>
             <a href="#about">About me</a>
         </div>
 
     </section>
 
     <section class="about" id="about">
-        <div class="about-info">
+        <div class="about-info reveal">
             <h2>About me</h2>
             <p>Hi! I'm <b>Andrew Soguero.</b> I'm a front-end web developer from Colorado. I'm passionate about creating
                 beautiful applications, designing intuitive user experiences, and learning new technologies. </p>
@@ -48,15 +48,15 @@
             <p>In my spare time, I enjoy builidng games with Unity and Godot as well as participating in Game Jams and
                 watching super hero movies.</p>
         </div>
-        <div class="about-image">
+        <div class="about-image reveal">
             <img src="https://media-exp1.licdn.com/dms/image/C4E03AQHBLg6k66MZRg/profile-displayphoto-shrink_800_800/0/1614022576420?e=1635984000&v=beta&t=GmwdJhSz9W2mtYBWGYvxL1gakEvRlfeHq0d41FBoE3w"
                 alt="">
         </div>
     </section>
 
     <section class="skills" id="skills">
-        <h2>Skills</h2>
-        <div class="skills-container">
+        <h2 class="reveal">Skills</h2>
+        <div class="skills-container reveal">
 
             <h3>HTML/CSS</h3>
             <h3>JavaScript</h3>
@@ -70,8 +70,8 @@
     </section>
 
     <section class="portfolio" id="portfolio">
-        <h2>Projects</h2>
-        <div class="projects">
+        <h2 class="reveal">Projects</h2>
+        <div class="projects reveal">
             <a href="./Weather App/index.html">
                 <div class="project">
                     <h3>Weather App</h3>
