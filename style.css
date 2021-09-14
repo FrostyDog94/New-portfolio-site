@@ -1,3 +1,12 @@
+:root{
+    --primary: #13293d;
+    --text-color: #2a9d8f;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -10,13 +19,17 @@ header{
     height: 10vh;
     justify-content: space-between;
     align-items: center;
-    background-color: #212529;
+    background-color: var(--primary);
     color: white;
     border: none;
 }
 
+.logo img{
+    height: 10vh;
+}
+
 nav{
-    width: 50%;
+    width: 70%;
     
 }
 
@@ -29,7 +42,7 @@ nav ul{
 
 nav ul.show{
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     width: 100vw;
     
     z-index: 2;
@@ -60,7 +73,7 @@ display: none;
 
 .main{
     display: flex;
-    background-color: #212529;
+    background-color: var(--primary);
     color: white;
     height: 90vh;
     padding: 0 10% 0 10%;
@@ -74,7 +87,11 @@ display: none;
 
 .info h2{
 font-size: 100px;
-font-weight: 400;
+font-weight: 200;
+}
+
+.highlight{
+    font-weight: 500;
 }
 
 .info p{
@@ -101,17 +118,7 @@ font-weight: 400;
     background-color: rgb(212, 112, 30);
 }
 
-.social{
-    display: flex;
-    flex-direction: column;
-    height: 80vh;
-    justify-content: space-evenly;
-}
 
-.social a{
-    color: white;
-    
-}
 
 .about{
     display: flex;
@@ -132,12 +139,39 @@ font-weight: 400;
 }
 
 .about-image img{
-    width: 500px;
+    width: 400px;
     border-radius: 50%;
+    border: 20px solid var(--primary);
+}
+
+.skills{
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    padding-top: 100px;
+    
+}
+
+.skills h2{
+    text-align: center;
+    margin-bottom: 2em;
+    font-size: 3em;
+    color: var(--primary);
+    
+}
+
+.skills-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 150px 50px;
+    background-color: #f2f2f2;
+    padding: 100px 75px;
+    color: var(--primary);
+    justify-items: center;
 }
 
 .portfolio{
-    height: 80vh;
+    height: 100vh;
     text-align: center;
     padding: 0 10% 0 10%;
     
@@ -194,8 +228,8 @@ font-weight: 400;
 }
 
 footer{
-    height: 20vh;
-    background-color: #212529;
+    height: 80vh;
+    background-color: var(--primary);
     color: white;
     text-align: center;
     padding-top: 50px;
@@ -204,12 +238,36 @@ footer{
 
 .contact{
     font-size: 40px;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 .email{
     font-size: 40px;
+    font-weight: 300;
 }
+
+footer ul{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+footer svg{
+    transition: all 0.3s ease;
+}
+
+footer svg:hover{
+    transform: translateY(-10px);
+}
+
+
 
 
 
@@ -220,7 +278,7 @@ footer{
 @media only screen and (max-width: 1000px) {
 
 header{
-    background-color: #4f5861;
+    background-color: var(--primary);
     padding: 0%;
     display: block;
 }
@@ -248,7 +306,7 @@ nav{
 
 nav ul{
     display: none;
-    background-color: #4f5861;
+    background-color: var(--primary);
  }
 
 nav ul li{
@@ -266,14 +324,14 @@ nav ul li{
 
 .info h2{
     font-size: 80px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 .info p{
     margin-top: 30px;
 }
 
 .info a{
-    margin-top: 50px;
+    margin-top: 10px;
     margin-left: 90px;
 }
 
@@ -286,7 +344,9 @@ nav ul li{
 .about{
     flex-direction: column;
     justify-content: center;
-    margin-top: 25px;
+    margin-top: 50px;
+    height: 100vh;
+    padding-top: ;
 }
 
 .about-info{
@@ -297,7 +357,7 @@ nav ul li{
 
 .about-info h2{
     font-size: 50px;
-    margin-top: 50px;
+    padding-top: 100px;
     
 }
 
@@ -311,9 +371,31 @@ nav ul li{
     margin-top: 30px;
 }
 
+.skills{
+    padding-top: 100px;
+    
+}
+
+.skills h2{
+    margin-top: 100px;
+    padding-top: 20px;
+    margin-bottom: 1em;
+}
+
+.skills-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    grid-gap: 10px 0;
+}
+
 .portfolio{
     margin-top: 100px;
     height: 200vh
+}
+
+.portfolio h2{
+    margin-bottom: 1em;
 }
 
 .projects{
@@ -321,6 +403,10 @@ nav ul li{
    transform: translateY(40px);
     
     
+}
+
+.project{
+    margin-bottom: 3em;
 }
 
 footer{
